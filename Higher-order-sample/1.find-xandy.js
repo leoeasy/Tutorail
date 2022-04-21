@@ -1,3 +1,7 @@
+/**
+ * Q :Destructerue 'properties' with alias 'elementprops', then grab X and Y related value as a number type:
+ */
+
 const { properties: elementProps } = scProps;
 const coordinate = elementProps
   .filter((prop) => {
