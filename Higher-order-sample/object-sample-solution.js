@@ -4,5 +4,5 @@ const coordinate = elementProps
     const { label } = prop;
     return label === "X" || label === "Y";
   })
-  .map((prop) => +[prop.value.match(/\d+\.\d+/)]);
+  .map((prop) => +[prop.value.match(/-?\d+.?\d*/)]);
 const [x, y] = coordinate;
