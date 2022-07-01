@@ -5,6 +5,7 @@ let o1 = {
 };
 
 let o2 = {
+  one: 7,
   two: 2,
   three: 3,
   four: 4,
@@ -17,3 +18,8 @@ let diff = Object.keys(o2).reduce((diff, key) => {
     [key]: o2[key],
   };
 }, {});
+
+Object.entries(o1).map((z) => {
+  let obj = { [z[0]]: z[1] };
+  return obj;
+});
